@@ -1,0 +1,13 @@
+from gpiozero import Servo # Imports the standard Raspberry Pi GPIO library
+from time import sleep   # Imports sleep (aka wait or pause) into the program
+
+
+servo=Servo(18)
+servo.min()
+
+
+while True:
+   servo.min()
+   sleep(5)
+   servo.max()
+   sleep(5)
